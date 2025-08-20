@@ -63,11 +63,14 @@ function crearuser(){
             nombreCompleto: correo,
             estadolog: true
         }
-    
+        
         localStorage.setItem("datosUsuario",JSON.stringify(newuser))
         window.location.href="home.html"
     }
 
 }
 
-
+function cerrarsesion(){
+    localStorage.removeItem("datosUsuario")
+    window.location.href="index.html"
+}
