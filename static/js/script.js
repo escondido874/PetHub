@@ -1,4 +1,4 @@
-let nombre = "fjksahefsygsdpjhfjisfehiofsea"
+
 let datousradm={
     "nombreCompleto": "Cristobal Zeppelin",
     "usuario": "escondido",
@@ -6,7 +6,7 @@ let datousradm={
     "estado" : true
 }
 
-console.log(nombre)
+
 
 function hola(){
     console.log("funciondwwuaidgawh")
@@ -42,7 +42,32 @@ function datosUsr(){
     console.log(usuario, pass)
 }
 
+function crearuser(){
+
+    let user = document.getElementById("userId").value
+    let pass = document.getElementById("exampleInputPassword1").value
+    let correo = document.getElementById("correo").value
+
+    if (user== "" || user.length<8){
+        alert("El usuario no puede estar vacio ni tener menos de 8 caracteres")
+    } else if (pass.length <8 || pass==""){
+        alert("La contraseña no puede estar vacio ni tener menos de 8 caracteres")
+    } else if (correo== "" || correo.length<8){
+        alert("El nombre completo no puede estar vacio ni tener menos de 8 caracteres")
+    // } else if (checkbox == null){
+    //     alert("Debes aceptar los términos y condiciones")
+    } else {
+    let newuser={
+            nombre: user,
+            password: pass,
+            nombreCompleto: correo,
+            estadolog: true
+        }
+    
+        localStorage.setItem("datosUsuario",JSON.stringify(newuser))
+        window.location.href="home.html"
+    }
+
+}
 
 
-// let usuario = document.getElementById("Usuarioinput")
-// console.log(usuario)
