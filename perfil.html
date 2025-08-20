@@ -7,11 +7,11 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="static/style/style.css"> 
-    <title>Home</title>
+    <title>Perfil</title>
 </head>
 <body>
-    <header>
-            <!--Navbar-->
+     <header>
+        <!--Navbar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                     <img src="static/img/rice.png" alt="logo" width="30" height="24">
@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="home.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="explorar.html">Explorar</a>
@@ -39,32 +39,21 @@
         </nav>
     </header>
 
-    <div style="background-color: rgba(0, 255, 255, 0.575);">
-        <h1 id="tituloHome" style="text-align: center;">Bienvenido</h1>
+    <div class="card-mb-3" >
+        <div class="row g-0">
+            <div class="col-md-2">
+            <img src="static/img/rice.png" class="img-perf" alt="...">
+            </div>
+            <div class="col-md-2">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container">
-        <div class="cards-container">
-            <div class="card" style="width: 18rem;">
-                <img src="static/img/se.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><img src="static/img/gold_s.png" class="card-icon"> Gold Ship</h5>
-
-                        <p class="card-text">Gud morning</p>
-                    </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="static/img/gato.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><img src="static/img/teio.png" class="card-icon">Tokai Teio</h5>
-                    <p class="card-text">¡Conozcan a Leo, mi nuevo gatito!</p>
-                </div>
-            </div>
-    </div>
-
-
-
-<script src="static/js/script.js"></script>
-
+    
 </body>
 </html>
